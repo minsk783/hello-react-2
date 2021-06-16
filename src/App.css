@@ -1,38 +1,137 @@
-.App {
-  text-align: center;
+.app {
+  width: 100%;
+  height: 100%;
+  font-family: Calibri;
+  position: fixed;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-header {
+  background-color: #232A32;
+  font-size: 28px;
+  font-style: bold;
+  color: #17B5BE;
+  height: 64px;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.app-main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.app-main .app-sidenav {
+  height: 100%;
+  width: 278px;
+  background-color: #2C343F;
+  overflow-x: hidden;
+  text-align: center;
+  display: flex;
+}
+
+.app-sidenav .app-sidenav-filter {
+  height: max-content;
+  width: 100%;
+  margin: auto;
+  list-style: none;
+}
+
+.app-sidenav-filter a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #789696;
+  display: block;
+  justify-content: center;
+  padding: 20px;
+}
+
+.app-sidenav-filter a:hover {
   color: white;
+  background-color: #17B5BE;
 }
 
-.App-link {
-  color: #61dafb;
+.app-main .app-content {
+  height: 100%;
+  width: 100%;
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app-content .app-path {
+  background-color: #E7E7E7;
+  height: 112px;
+  width: 100%;
+  padding-left: 33px;
+  display: flow-root;
+}
+
+.app-content .content-container {
+  display: flex;
+  background-color: #F5F6F7;
+  height: 100%;
+  width: 100%;
+}
+
+.content-container .app-item {
+  background-color: #FFFFFF;
+  height: 100%;
+  width: 401px;
+}
+
+.info {
+  margin: 33px;
+}
+
+.content-container .app-upload{
+  height: 100%;
+  width: 100%;
+}
+
+/*
+
+.path {
+  padding: 12px;
+  margin-left: 33px;
+}
+
+.app-item-info {
+  background-color: #FFFFFF;
+  width: 401px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  margin-top: 176px;
+  margin-left: 278px;
+}
+
+.app-item-info img {
+  margin: 33px;
+  margin-bottom: 0;
+}
+
+.item-info {
+  margin: 33px;
+}
+
+.app-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 16px;
+  max-width: 800px;
+  margin-left: 679px;
+  margin-right: auto;
+}
+
+.app-upload{
+  margin-left: 679px;
+  padding: 0px 10px;
+} */
+
+.complete {
+  text-decoration: line-through;
 }
