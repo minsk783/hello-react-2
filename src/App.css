@@ -3,6 +3,7 @@
   height: 100%;
   font-family: Calibri;
   position: fixed;
+  background-color: #F5F6F7;
 }
 
 .app-header {
@@ -23,7 +24,13 @@
   display: flex;
 }
 
-.app-main .app-sidenav {
+.app-main .app-content {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.app-sidenav {
   height: 100%;
   width: 278px;
   background-color: #2C343F;
@@ -53,13 +60,11 @@
   background-color: #17B5BE;
 }
 
-.app-main .app-content {
-  height: 100%;
-  width: 100%;
-  margin: 0;
+.app-content {
+  display: block;
 }
 
-.app-content .app-path {
+.app-path {
   background-color: #E7E7E7;
   height: 112px;
   width: 100%;
@@ -67,17 +72,34 @@
   display: flow-root;
 }
 
-.app-content .content-container {
-  display: flex;
+.path {
+  font-size: 13px;
+  color: #959490;
+  padding: 12px;
+  padding-left: 0;
+}
+
+.content-container {
   background-color: #F5F6F7;
   height: 100%;
   width: 100%;
+  margin: 0;
 }
 
-.content-container .app-item {
+.item {
+  height: 865px;
+  width: 1260px;
+}
+.item-box {
+  height: 267px;
+  width: 188px;
   background-color: #FFFFFF;
-  height: 100%;
-  width: 401px;
+  font-size: 20px;
+  margin: 25px;
+}
+
+.item-box p {
+  padding-left: 10px;
 }
 
 .info {
@@ -88,6 +110,8 @@
   height: 100%;
   width: 100%;
 }
+
+
 
 /*
 
